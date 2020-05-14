@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Normalize
+# Typography
+# Elements
+# Forms
+# Header
+	## Navigation
+# Footer
+# Pages
+	## Grid
+	## Home
+	## Currently Reading (Home)
+	## Single (Review)
+# Content
+	## Posts and pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+$bg: #f6f2ef;
+$link: #1b6ac9;
+$btn_color: #2da562;
+$font_family: 'Consolas', sans-serif;
+
+$max_width: 900px;
+$box_shadow: 1px 1px 5px #999;
+$radius: 10px;
+$padding: 15px;
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+body{
+  font-size: 16px;
+  font-family: $font_family;
+  background-color: $bg;
+}
+
+.container{
+  max-width: $max_width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+.btn, button{
+  padding: 10px $padding;
+  border: 0;
+  border-radius: 5px;
+  background-color: $btn_color;
+  color: white;
+  font-family: $font_family;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: 0.3s ease-in-out;
+
+  &:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  &:active, &:focus{outline: 0}
+
+  &:disabled{
+    background-color: #999;
+    &:hover{
+      opacity: 1;
+      cursor:not-allowed;
+    }
+  }
+
+}
+
+fieldset{
+  min-width: -webkit-fill-available;
+  max-width: -webkit-fill-available;
+  border: 0;
+  border-radius: $radius;
+  padding: $padding $padding $padding * 2;
+  margin-bottom: $padding * 2;
+  background-color: white;
+  box-shadow: $box_shadow;
+
+  legend{
+    background-color: $bg;
+    padding: 0 10px;
+    font-weight: 600;
+  }
+
+  .inputWrapper{
+    margin-right: 10px;
+
+    label{
+      margin-right: $padding;
+      &:last-of-type{margin-right: 0;}
+    }
+  }
+
+}
+
+input[type="radio"],input[type="checkbox"]{margin-top: 0; zoom: 1.5;}
+
+#output{
+  display: none;
+
+  textarea{
+    min-width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
+    min-height: 500px;
+    border: 0;
+
+    &:active, &:focus{outline: 0}
+  }
+}

@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Normalize
+# Typography
+# Elements
+# Forms
+# Header
+	## Navigation
+# Footer
+# Pages
+	## Grid
+	## Home
+	## Currently Reading (Home)
+	## Single (Review)
+# Content
+	## Posts and pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+body {
+  font-size: 16px;
+  font-family: "Consolas", sans-serif;
+  background-color: #f6f2ef;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+.btn, button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #2da562;
+  color: white;
+  font-family: "Consolas", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover, button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.btn:active, .btn:focus, button:active, button:focus {
+  outline: 0;
+}
+.btn:disabled, button:disabled {
+  background-color: #999;
+}
+.btn:disabled:hover, button:disabled:hover {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+fieldset {
+  min-width: -webkit-fill-available;
+  max-width: -webkit-fill-available;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 15px 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 5px #999;
+}
+fieldset legend {
+  background-color: #f6f2ef;
+  padding: 0 10px;
+  font-weight: 600;
+}
+fieldset .inputWrapper {
+  margin-right: 10px;
+}
+fieldset .inputWrapper label {
+  margin-right: 15px;
+}
+fieldset .inputWrapper label:last-of-type {
+  margin-right: 0;
+}
+
+input[type=radio], input[type=checkbox] {
+  margin-top: 0;
+  zoom: 1.5;
+}
+
+#output {
+  display: none;
+}
+#output textarea {
+  min-width: -webkit-fill-available;
+  max-width: -webkit-fill-available;
+  min-height: 500px;
+  border: 0;
+}
+#output textarea:active, #output textarea:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=style.min.css.map */

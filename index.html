@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notes 4 Generator</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div id="main" class="container">
+    <h1>Notes 4 Generator</h1>
+
+    <fieldset>
+      <legend>Options</legend>
+      <div class="flex">
+      <div class="inputWrapper flex"><input id="one" type="radio" name="options" value="sun" /><label>No meet on Sun</label></div>
+      <div class="inputWrapper flex"><input id="two" type="radio" name="options" value="normal" /><label>Normal</label></div>
+      <div class="inputWrapper flex"><input id="three" type="radio" name="options" value="sleepover" /><label>Sleepover Sat</label></div>
+      </div>
+    </fieldset>
+
+    <fieldset id="output">
+      <legend>Output</legend>
+      <textarea></textarea>
+    </fieldset>
+
+    <button id="btnGenerate" class="btn">Generate</button>
+
+
+  </div>
+</body>
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
